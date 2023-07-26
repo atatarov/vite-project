@@ -1,0 +1,22 @@
+@import '@/app/styles/variables/colors';
+
+.UserCard {
+  background-color: $background-primary;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 300px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1),
+      -6px -6px 18px rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .UserCard {
+    min-width: unset;
+  }
+}

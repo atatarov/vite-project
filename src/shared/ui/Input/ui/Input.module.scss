@@ -1,0 +1,15 @@
+.Input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: 'yellow';
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: 'green';
+  }
+}

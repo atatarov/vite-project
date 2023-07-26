@@ -1,0 +1,24 @@
+@import '@/app/styles/variables/colors';
+
+.Button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  background: $background-primary;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px $background-secondary, -3px -3px 6px $text-primary;
+  font-size: 14px;
+  color: $text-black;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.7;
+    transition: box-shadow 0.3s ease-in;
+    box-shadow: 1px 1px 2px $background-secondary, -1px -1px 2px $text-primary;
+  }
+}
+
+.background {
+  background: $bg-color;
+  border: none;
+}

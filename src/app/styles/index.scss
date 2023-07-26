@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'fonts/mulish.scss';
+@import 'variables/colors';
+
+body {
+  background: $background-primary;
+  font-family: 'Mulish', 'Arial', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}

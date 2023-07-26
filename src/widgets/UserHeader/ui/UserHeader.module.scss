@@ -1,0 +1,46 @@
+@import '@/app/styles/variables/colors';
+
+.Header {
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 20px;
+  border-radius: 16px;
+  background: $background-primary;
+  box-shadow: 10px 10px 20px $background-secondary,
+    -10px -10px 20px $background-primary;
+  width: 100%;
+
+  &Title {
+    color: $text-accent;
+    opacity: 0.9;
+    font-size: 24px;
+  }
+
+  &List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &Item {
+      margin: 0 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Header {
+    &Title {
+      font-size: 18px;
+    }
+
+    &List {
+      &Item {
+        margin: 0 8px;
+      }
+    }
+  }
+}

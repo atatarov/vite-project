@@ -1,0 +1,43 @@
+@import '@/app/styles/variables/colors';
+
+.Search {
+  display: flex;
+  align-items: center;
+  background: $background-primary;
+  box-shadow: 10px 10px 20px $background-secondary,
+    -10px -10px 20px $background-primary;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+
+  .Input {
+    flex: auto;
+    padding: 10px;
+    border: none;
+    background: $background-primary;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 16px $bg-color, inset -8px -8px 16px $white-color;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      box-shadow: inset 4px 4px 10px $bg-color,
+        inset -4px -4px 10px $white-color;
+    }
+  }
+
+  .Button {
+    width: 160px;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background: $background-primary;
+    box-shadow: 8px 8px 16px $text-primary, -8px -8px 16px $white-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Button :hover {
+    box-shadow: 4px 4px 10px $text-primary, -4px -4px 10px $white-color;
+  }
+}

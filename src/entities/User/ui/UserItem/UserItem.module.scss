@@ -1,0 +1,52 @@
+@import '@/app/styles/variables/colors';
+
+.UserItem {
+  background: $background-primary;
+  border-radius: 12px;
+  box-shadow: -8px -8px 16px $background-secondary, 8px 8px 16px $text-primary;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.9;
+
+  .Card {
+    &Header {
+      font-size: 24px;
+      font-weight: 700;
+      color: $text-accent;
+    }
+
+    &Wrapper {
+      font-weight: 200;
+      color: $text-secondary;
+    }
+
+    &Data {
+      color: $text-black;
+      font-weight: 400;
+    }
+  }
+}
+
+.UserItem:hover {
+  opacity: 1;
+  transition: box-shadow 0.3s ease-in;
+  box-shadow: 0px 0px 24px $text-gray, 0px 0px 24px $text-gray;
+}
+
+@media screen and (max-width: 768px) {
+  .UserItem {
+    flex-direction: column;
+
+    .Card {
+      margin-bottom: 16px;
+
+      &Header {
+        font-size: 16px;
+      }
+    }
+  }
+}
